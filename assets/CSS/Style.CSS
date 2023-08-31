@@ -84,6 +84,12 @@
     transform: scale(2) ;
 }
 
+.foot:has(textarea:focus){
+    
+
+
+}
+
 h1{
     position: absolute;
     display: block;
