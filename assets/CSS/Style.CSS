@@ -1,50 +1,110 @@
 .box_header{
-    display: block;
-    position: relative;
+    display: inline;
+    flex-flow: row wrap;
     text-align: left;
     color: transparent;
-    height: 750px;
-    width: 1100px;
-    margin: 50px;
-    transform: translate(100px, -100px);
+    /* height: 100px;
+    width: 1100px; */
+    /* margin: 50px; */
     
 }
 
 
 .gros_titre {
-    position: absolute;
+    position: relative;
     color: rgb(51, 0, 255);
-    font-size: 150px;
+    font-size: 125px;
     font-weight: bolder;
     font-family: 'Merriweather', serif;
-    top: 250px;
+    /* top: 0px; */
     left: 5px;
+    margin-left: 75px;
+    /* margin-bottom: 275px; */
+    
 }
 
 #banner{
+    height: 1080px;
+    width: 1920px;
+    object-fit:cover;
     transform-origin: center;
-    transform: scale(1.5);
 } 
 
 .corpus{
-    display: inline-block;
-    position:relative;
-    text-align: justify;
-    box-sizing: content-box;
-    height: 225px;
-    width: 450px;
+    position: relative;
+    background-color: rgb(255, 255, 200);
+    display: flex;
+    margin: auto;
+    flex-flow: row nowrap;
+    gap: 50px;
+    align-items:center;
+    justify-content:first baseline;
+    height: 540px;
+    width: 1000px;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 25px;
-    color: blue;
+    font-family: 'Roboto', monospace;
+    color: rgb(102, 0, 255);
+    font-size: 75px;
+    
+    
+}
+
+#flexbox{
+    flex-basis:content;
+    flex: grow 1;
+    flex-shrink: 2;
+    height: 100px;
+    width: 250px;
+    transition: 0.75s;
+    letter-spacing: 1px;
+}
+
+#flexbox:hover{
+    letter-spacing: 10px;
+}
+
+.foot{
+    position: relative;
+    left: 430px;
+    height: 50px;
+    width: 960px;
+    border: none;
+    border-radius:100px;
+    position:relative;
+    bottom: -500px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: tomato;
+    background-color:rgba(255, 100, 0, 0.3);
+    transition: 1s;
+}
+
+.foot:hover{
+    transform: scale(2) ;
+}
+
+h1{
+    position: absolute;
+    display: block;
+    top: 10px;
+    font-size: 350px;
+    color: rgb(251, 255, 138);
+}
+
+#textfield{
+    position: absolute;
+    top: 25%;
+    border: none;
+}
+
+label{
+    position: absolute;
+    left: 35%;
+    top: 25%;
 }
 
 
-/* .vertical_box h2{
-    display: inline-block;
-    height: 10%;
-    width: 10px;
-    text-align:justify;
-    box-sizing: content-box;
-    text-orientation: sideways;
-} */
+
+
+
